@@ -9,10 +9,11 @@ use GuzzleHttp\Promise\PromiseInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;
+use Psr\Http\Client\ClientInterface;
+use ClientTrait;
 
-class Client implements ClientInterface, \Psr\Http\Client\ClientInterface
+class Client implements ClientInterface
 {
-    use ClientTrait;
 
     /**
      * @var array Default request options
